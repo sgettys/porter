@@ -158,9 +158,9 @@ func buildPluginRunCommand(p *porter.Porter) *cobra.Command {
 			opts.ApplyArgs(args)
 			return p.RunInternalPlugins(cmd.Context(), opts)
 		},
-		Hidden: true, // This should ALWAYS be hidden, it is not a user-facing command
+		Hidden:      true, // This should ALWAYS be hidden, it is not a user-facing command
 		Annotations: map[string]string{
-			skipConfig: "",
+			//skipConfig: "",
 		},
 	}
 

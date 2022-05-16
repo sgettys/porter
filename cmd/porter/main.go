@@ -5,6 +5,7 @@ import (
 	_ "embed"
 	"fmt"
 	"os"
+	"os/signal"
 	"runtime/debug"
 	"strings"
 
@@ -21,15 +22,27 @@ var includeDocsCommand = false
 //go:embed helptext/usage.txt
 var usageText string
 
-// Indicates that config should not be loaded for this command.
-// This is used for commands like help and version which should never
-// fail, even with porter is misconfigured.
-const skipConfig string = "skipConfig"
+const (
+	// Indicates that config should not be loaded for this command.
+	// This is used for commands like help and version which should never
+	// fail, even with porter is misconfigured.
+	skipConfig string = "skipConfig"
+
+	// exitCodeSuccess indicates the program ran successfully
+	exitCodeSuccess = 0
+
+	// exitCodeErr indicates the program encountered an error
+	exitCodeErr = 1
+
+	// exitCodeInterrupt indicates the program was cancelled
+	exitCodeInterrupt = 2
+)
 
 func main() {
 	run := func() int {
-		ctx := context.Background()
 		p := porter.New()
+		mainCtx, cancel := handleInterrupt(context.Background())
+		defer cancel()
 
 		rootCmd := buildRootCommandFrom(p)
 
@@ -49,13 +62,13 @@ func main() {
 		// really need it, skip it for commands that should NEVER
 		// fail.
 		if !shouldSkipConfig(cmd) {
-			if err := p.Connect(ctx); err != nil {
+			if err := p.Connect(mainCtx); err != nil {
 				fmt.Fprintln(os.Stderr, err.Error())
-				os.Exit(1)
+				os.Exit(exitCodeErr)
 			}
 		}
 
-		ctx, log := p.StartRootSpan(ctx, commandName, attribute.String("command", formattedCommand))
+		ctx, log := p.StartRootSpan(mainCtx, commandName, attribute.String("command", formattedCommand))
 		defer func() {
 			// Capture panics and trace them
 			if panicErr := recover(); panicErr != nil {
@@ -64,7 +77,7 @@ func main() {
 					attribute.String("stackTrace", string(debug.Stack())))
 				log.EndSpan()
 				p.Close()
-				os.Exit(1)
+				os.Exit(exitCodeErr)
 			} else {
 				log.EndSpan()
 				log.Close()
@@ -72,18 +85,57 @@ func main() {
 			}
 		}()
 
-		if err := rootCmd.ExecuteContext(ctx); err != nil {
-			// Ideally we log all errors in the span that generated it,
-			// but as a failsafe, always log the error at the root span as well
-			log.Error(err)
-			return 1
+		// Run the command, gracefully quitting if requested
+		done := make(chan error)
+		go func() {
+			err := rootCmd.ExecuteContext(ctx)
+			done <- log.Error(err)
+		}()
+
+		for {
+			select {
+			case <-mainCtx.Done():
+				panic("cancel made it this far")
+				fmt.Println("canceling!")
+				log.Error(fmt.Errorf("interrupt signal received, canceling!"))
+				return exitCodeInterrupt
+			case err := <-done:
+				if err != nil {
+					return exitCodeErr
+				}
+				return exitCodeSuccess
+			}
 		}
-		return 0
 	}
 
 	// Wrapping the main run logic in a function because os.Exit will not
 	// execute defer statements
 	os.Exit(run())
+}
+
+// Try to exit gracefully when the interrupt signal is sent (CTRL+C)
+// Thanks to Mat Ryer, https://pace.dev/blog/2020/02/17/repond-to-ctrl-c-interrupt-signals-gracefully-with-context-in-golang-by-mat-ryer.html
+func handleInterrupt(ctx context.Context) (context.Context, func()) {
+	ctx, cancel := context.WithCancel(ctx)
+	signalChan := make(chan os.Signal, 1)
+	signal.Notify(signalChan, os.Interrupt)
+
+	go func() {
+		select {
+		case <-signalChan: // first signal, cancel context
+			fmt.Println("cancel requested")
+			cancel()
+		case <-ctx.Done():
+		}
+		<-signalChan // second signal, hard exit
+		fmt.Println("hard interrupt received, bye!")
+		os.Exit(exitCodeInterrupt)
+	}()
+
+	return ctx, func() {
+		signal.Stop(signalChan)
+		cancel()
+	}
 }
 
 func shouldSkipConfig(cmd *cobra.Command) bool {

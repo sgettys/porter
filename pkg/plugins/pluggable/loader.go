@@ -74,8 +74,8 @@ func (l *PluginLoader) Load(ctx context.Context, pluginType PluginTypeConfig) (P
 
 	// quick check to detect that we are running as porter, and not a plugin already
 	if l.Context.IsInternalPlugin {
-		err := fmt.Errorf("the internal plugin %s tried to load the %s plugin. Report this error to https://github.com/getporter/porter", l.Context.InternalPluginKey, l.SelectedPluginKey)
-		return PluginConnection{}, span.Error(err)
+		//err := fmt.Errorf("the internal plugin %s tried to load the %s plugin. Report this error to https://github.com/getporter/porter", l.Context.InternalPluginKey, l.SelectedPluginKey)
+		//return PluginConnection{}, span.Error(err)
 	}
 
 	l.SelectedPluginKey.Interface = pluginType.Interface
