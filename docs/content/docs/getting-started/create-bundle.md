@@ -183,16 +183,16 @@ $ porter explain ghcr.io/getporter/porter-hello:v0.2.0
 
 Now that you know how to create a bundle, here are some more detailed topics on how to customize and distribute it:
 
-- [Control how your bundle's image is built with a custom Dockerfile](/bundle/custom-dockerfile/)
+- [Control how your bundle's image is built with a custom Dockerfile](/docs/bundle/custom-dockerfile/)
 - [Customize your Porter manifest, porter.yaml][manifest]
-- [Porter Manifest File Format](/bundle/manifest/file-format/)
-- [Best Practices for the exec Mixin](/best-practices/exec-mixin/)
-- [Understand how bundles are distributed](/distribute-bundles/)
+- [Porter Manifest File Format](/docs/bundle/manifest/file-format/)
+- [Best Practices for the exec Mixin](/docs/best-practices/exec-mixin/)
+- [Understand how bundles are distributed](/docs/development/authoring-a-bundle/distribute-bundles/)
 
 [install Porter]: /install/
 [Porter Visual Studio Code]: https://marketplace.visualstudio.com/items?itemName=getporter.porter-vscode
 [hello example bundle]: /references/examples/hello/
-[manifest]: /bundle/manifest/
+[manifest]: /docs/bundle/manifest/
 [local-registry]: https://docs.docker.com/registry/deploying/#run-a-local-registry
 [porter create]: /cli/porter_create/
 [porter build]: /cli/porter_build/
@@ -206,6 +206,6 @@ Now that you know how to create a bundle, here are some more detailed topics on 
 [terraform mixin]: /mixins/terraform/
 [do not embed bash commands]: /best-practices/exec-mixin/
 [ignore-errors]: /blog/ignoring-errors/
-[compatible registries]: /compatible-registries/
+[compatible registries]: /docs/references/compatible-registries/
 [custom Dockerfile]: /bundle/custom-dockerfile/
 [Buildkit]: https://docs.docker.com/develop/develop-images/build_enhancements/

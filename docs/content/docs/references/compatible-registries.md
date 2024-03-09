@@ -2,6 +2,7 @@
 title: Compatible Registries
 description: Understanding which OCI registries work with CNAB
 weight: 3
+url: /compatible-registries/
 ---
 
 Cloud Native Application Bundles are very new, and support for storing anything

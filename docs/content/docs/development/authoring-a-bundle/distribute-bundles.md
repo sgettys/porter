@@ -3,7 +3,7 @@ title: Distribute Bundles
 description: Share and distribute your bundles with others
 weight: 5
 aliases:
-  - /distributing-bundles/
+  - /distribute-bundles/
 ---
 
 Once you have built a bundle with Porter, the next step is to share the bundle and invocation image so others can use it. Porter uses OCI (Docker) registries to share both CNAB bundle manifest and invocation images.
