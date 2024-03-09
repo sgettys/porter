@@ -77,7 +77,7 @@ $ porter upgrade -c blue-team-creds --version 0.3.1
 # Upgrade is run again but this time with the shared blue team credentials
 ```
 
-[Credential Set Schema]: /src/pkg/schema/credential-set.schema.json
+[Credential Set Schema]: https://github.com/getporter/porter/blob/main/pkg/schema/credential-set.schema.json
 
 ## Runtime
 

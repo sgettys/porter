@@ -29,6 +29,6 @@ add your own to the list.
 
 [mongodb plugin]: /plugins/mongodb/
 [mongodb-docker plugin]: /plugins/mongodb-docker/
-[vs]: /introduction/mixins-vs-plugins/
+[vs]: /docs/introduction/concepts-and-components/mixins-vs-plugins/
 [types]: /plugins/types/
 [search-guide]: /package-search/

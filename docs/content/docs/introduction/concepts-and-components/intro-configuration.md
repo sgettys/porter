@@ -223,7 +223,7 @@ Use the trace and logs configuration sections below to configure how logs and te
 
 #### Logs
 
-Porter can be configured to [write a logfile for each command](/administrators/diagnostics/#logs).
+Porter can be configured to [write a logfile for each command](/docs/administration/collect-diag-porter/#logs).
 
 The following log settings are available:
 
@@ -273,7 +273,7 @@ telemetry:
 ### Dependencies v2
 
 The `dependencies-v2` experimental flag is not yet implemented.
-When it is completed, it is used to activate the features from [PEP003 - Advanced Dependencies](https://github.com/getporter/proposals/blob/main/pep/003-dependency-namespaces-and-labels.md).
+When it is completed, it is used to activate the features from [PEP003 - Advanced Dependencies](https://github.com/getporter/proposals/tree/main/pep/003-advanced-dependencies).
 
 ## Common Configuration Settings
 
@@ -315,7 +315,7 @@ Therefore, it does not work with the Azure Cloud Shell driver.
 
 ### Schema Check
 
-The schema-check configuration file setting controls Porter's behavior when the schemaVersion of a resource does not match [Porter's supported version](/reference/file-formats/#supported-versions).
+The schema-check configuration file setting controls Porter's behavior when the schemaVersion of a resource does not match [Porter's supported version](/docs/references/file-formats/#supported-versions).
 By default, Porter requires that a resource's schemaVersion field matches Porter's allowed version(s).
 In some cases, such as when migrating to a new version of Porter, it may be helpful to use a less strict version comparison.
 Allowed values are:
