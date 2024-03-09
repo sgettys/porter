@@ -115,7 +115,7 @@ porter storage migrate --old-home ~/.porterv0 [--old-account ACCOUNT_NAME] [--na
 The only required flag is \--old-home, which you should set to the location where you moved your v0 PORTER_HOME directory.
 You may also optionally set \--old-account if the data that you want to migrate is not the configured default storage account.
 
-By default, Porter migrates your data into the [current namespace](/configuration/#namespace), which may be configured in your Porter v1 configuration file or the PORTER_NAMESPACE environment variable.
+By default, Porter migrates your data into the [current namespace](/docs/configuration/configuration/#namespace), which may be configured in your Porter v1 configuration file or the PORTER_NAMESPACE environment variable.
 Porter v0 doesn't have the concept of namespaces, and effectively everything was defined in the global (empty) namespace.
 We recommend using the \--namespace flag and being explicit about where the data should be migrated.
 
