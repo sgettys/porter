@@ -13,7 +13,7 @@ configurations, so you don't need to repeat them each time when you run porter.
 The configuration file should be stored in the PORTER_HOME directory, by default
 ~/.porter/. In the example below, we are going to use the yaml format, however,
 porter supports other file formats for its config file as well. For more detailed
-information, please see [configuration](/configuration/#config-file).
+information, please see [configuration](/docs/configuration/configuration/#config-file).
 
 Create a file at ~/.porter/config.yaml and open it in your editor.
 
@@ -39,7 +39,7 @@ default-secrets-plugin: "filesystem"
 After saving this change to the config file, you will be able to work with
 bundles that contains sensitive parameters or outputs on your local machine. Be
 aware that the [filesystem](/plugins/filesystem) stores sensitive data in plaintext on your filesystem.
-Use either the [azure-keyvault](/plugins/azure-keyvault) or [hashicorp-vault](/plugins/hashicorp-vault) plugin in production.
+Use either the [azure-keyvault](/plugins/azure) or [hashicorp-vault](/plugins/hashicorp) plugin in production.
 
 ### Change the default storage plugin
 
@@ -65,5 +65,5 @@ suitable for production use.
 
 ## Next Steps
 
-- [Configuration File Format](/configuration/)
+- [Configuration File Format](/docs/configuration/configuration/#config-file)
 - [Available Plugins](/plugins/#available-plugins)

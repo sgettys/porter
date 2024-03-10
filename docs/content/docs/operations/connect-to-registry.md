@@ -111,5 +111,5 @@ docker rm -vf registry registry-with-tls
 
 ## Next Steps
 
-- [Connect to Docker](/end-users/connect-docker/)
-- [Configure Porter](/end-users/configuration/)
+- [Connect to Docker](/docs/operations/connect-to-docker/)
+- [Configure Porter](/docs/configuration/configuration/)

@@ -59,5 +59,5 @@ Porter supports additional Docker environment variables that may be useful to yo
 
 ## Next Steps
 
-- [Connect to a Docker Registry](/end-users/connect-registry/)
-- [Configure Porter](/end-users/configuration/)
+- [Connect to a Docker Registry](/docs/operations/connect-to-registry/)
+- [Configure Porter](/docs/configuration/configuration)
