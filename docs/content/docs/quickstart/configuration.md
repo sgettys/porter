@@ -56,4 +56,4 @@ In this QuickStart you learned how to configure Porter to define global default
 value for bundles and porter itself. You also learned how to work with bundles
 that contains or produces sensitive data.
 
-- [Learn more about Porter's configuration file](/configuration)
+- [Learn more about Porter's configuration file](/docs/configuration/configuration)

@@ -23,7 +23,7 @@ For this quickstart, the main concepts that you will use include:
 - Installation - An instance of a bundle installed to your system.
 - Tag - A reference to the bundle in an OCI registry that contains the registry, bundle name, and version, e.g. myregistry.com/mybundle:v1.0.
 - Registry - An OCI compliant artifact store.
-  Many Docker registries are now OCI compliant and work with bundles, here's a list of [popular registries have been tested with Porter](/references/compatible-registries).
+  Many Docker registries are now OCI compliant and work with bundles, here's a list of [popular registries have been tested with Porter](/docs/references/compatible-registries).
 
 ## Understand a Bundle
 
@@ -165,5 +165,5 @@ porter uninstall porter-hello
 
 In this QuickStart, you learned how to use some of the features of the porter CLI to explain a bundle, install and manage its lifecycle.
 
-- [QuickStart: Use parameters with a bundle](/quickstart/parameters/)
-- [Learn more about use cases for bundles](/learning/#the-devil-is-in-the-deployments-bundle-use-cases)
+- [QuickStart: Use parameters with a bundle](/docs/quickstart/parameters/)
+- [Learn more about use cases for bundles](/docs/learn/#the-devil-is-in-the-deployments-bundle-use-cases)
