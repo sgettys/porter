@@ -4,6 +4,7 @@ description: Figure out how to use a bundle
 weight: 2
 aliases:
   - /examining-bundles/
+  - /operations/examine-bundles/
 ---
 
 Once a bundle has been built, how do users of the bundle figure out how to actually _use_ it? A user could read the `porter.yaml` or the `bundle.json` if they have the bundle locally, but this won't work for a bundle that has been published to an OCI registry. Even when you have them locally, the `bundle.json` and `porter.yaml` aren't the best way to figure out how to use a bundle. How should a user examine the bundle then? Porter has a command called `explain` to help with this!

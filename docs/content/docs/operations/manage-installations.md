@@ -2,6 +2,8 @@
 title: Manage Installations
 description: Manage bundle installations with Porter
 weight: 1
+aliases:
+  - /operations/manage-installations/
 ---
 
 When a bundle is installed, an **installation** is created.

@@ -2,6 +2,8 @@
 title: "Quickstart"
 description: ""
 weight: 2
+aliases:
+  - /quickstart/
 ---
 
 {{< cards >}}

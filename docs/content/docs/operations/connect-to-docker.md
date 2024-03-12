@@ -2,6 +2,8 @@
 title: Connect to Docker
 description: Configure Porter to authenticate and connect to a Docker engine
 weight: 5
+aliases:
+  - /operations/connect-to-docker/
 ---
 
 Some Porter commands connect to a Docker engine in order to build, push, and pull the bundle image.

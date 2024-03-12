@@ -4,6 +4,7 @@ description: View logs from previous runs of Porter
 weight: 3
 aliases:
   - operators/logs/
+  - /operations/view-logs/
 ---
 
 You can view the logs from the most recent execution of a bundle with the

@@ -2,6 +2,8 @@
 title: "Operations"
 description: ""
 weight: 5
+aliases:
+  - /operations/
 ---
 
 **Get Started with Porter**

@@ -2,6 +2,8 @@
 title: Create a Porter Config File
 description: Learn how to customize Porter's default behavior through configuration file
 weight: 4
+aliases:
+  - /operations/create-porter-config/
 ---
 
 Porter's default behavior, such as log level and default plugins, can be modified through its config file.

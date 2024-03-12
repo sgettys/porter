@@ -2,6 +2,8 @@
 title: Connect to a Registry
 description: Configure Porter to authenticate and connect to a registry
 weight: 6
+aliases:
+  - /operations/connect-to-registry/
 ---
 
 Porter stores bundles in OCI (Docker) registries.

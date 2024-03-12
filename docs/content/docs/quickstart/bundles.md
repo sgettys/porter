@@ -1,6 +1,8 @@
 ---
 title: "Bundles"
 descriptions: Learn about bundles and how to install them with Porter
+aliases:
+  - /quickstart/bundles/
 ---
 
 So you're interested in learning more about Porter? Great! This guide will walk you through key concepts of managing bundles. You will use the porter CLI to install, upgrade, and uninstall the bundle.
