@@ -2,6 +2,8 @@
 title: When to use credentials vs parameters
 description: When writing a bundle in Porter, when should you use credentials instead of parameters?
 weight: 1
+aliases:
+- /best-practices/credentials-or-parameters/
 ---
 
 Porter has two types of bundle inputs: credentials and parameters.

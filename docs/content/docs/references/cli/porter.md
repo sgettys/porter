@@ -2,6 +2,7 @@
 title: "Overview"
 weight: 1
 slug: porter
+url: /cli/porter/
 ---
 
 With Porter you can package your application artifact, client tools, configuration and deployment logic together as a versioned bundle that you can distribute, and then install with a single command.

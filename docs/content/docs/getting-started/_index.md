@@ -2,6 +2,8 @@
 title: "Getting Started"
 description: ""
 weight: 3
+aliases:
+- /getting-started/
 ---
 
 **Get Started with Porter**

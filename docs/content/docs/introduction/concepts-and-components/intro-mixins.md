@@ -5,6 +5,8 @@ weight: 7
 aliases:
   - /using-mixins/
   - /use-mixins/
+  - /introduction/concepts-and-components/intro-mixins/
+  - /introduction/mixins/
 ---
 
 Mixins make Porter special. They are the building blocks that you use when authoring bundles. Find them, use them, [create your own](/mixin-dev-guide/).

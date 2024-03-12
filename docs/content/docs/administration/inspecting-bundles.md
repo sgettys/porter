@@ -5,6 +5,7 @@ weight: 1
 aliases:
   - /inspecting-bundles/
   - /inspect-bundle/
+  - /administration/inspecting-bundles/
 ---
 
 You've found a bundle that you'd like to use, but you'd like to what images will be used after you install the bundle. You can use the `porter inspect` command to see this information. If you'd like to see additional information, like parameters, credentials, and outputs, see the [explain](/operations/examine-bundles/) command.

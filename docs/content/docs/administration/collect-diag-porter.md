@@ -2,6 +2,8 @@
 title: Collect Diagnostics from Porter
 description: How to configure Porter to generate logs and telemetry data for diagnostic purposes
 weight: 4
+aliases:
+- /administration/collect-diag-porter/
 ---
 
 Porter can generate two types of data to assist with diagnostics and troubleshooting:

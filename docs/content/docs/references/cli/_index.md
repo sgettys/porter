@@ -3,6 +3,7 @@ title: "Porter Commands"
 date: 2023-09-10T01:55:46+05:30
 description: ""
 weight: 2
+url: /cli/
 ---
 
 **All of the Porter Commands**

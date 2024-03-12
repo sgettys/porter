@@ -2,6 +2,8 @@
 title: "Administration"
 description: ""
 weight: 6
+aliases:
+- /administration/
 ---
 
 **Learn about managing Administration**

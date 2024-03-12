@@ -1,5 +1,6 @@
 ---
 title: "Porter Parameters Edit"
+url: /cli/porter_parameters_edit/
 ---
 
 Edit Parameter Set

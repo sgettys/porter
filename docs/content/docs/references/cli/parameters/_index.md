@@ -1,6 +1,8 @@
 ---
 title: "Parameters"
 weight: 4
+aliases: 
+  - /cli/porter_parameters/
 ---
 
 ## Parameter set commands

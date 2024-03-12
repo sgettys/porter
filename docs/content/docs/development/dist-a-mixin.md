@@ -2,6 +2,8 @@
 title: Distributing Mixins
 description: How to distribute a mixin for others to install and use
 weight: 3
+aliases:
+- /development/dist-a-mixin/
 ---
 
 Once you have created a mixin, it is time to share it with others so that

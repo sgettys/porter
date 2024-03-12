@@ -2,6 +2,9 @@
 title: Configuration
 description: Controlling Porter with its config file, environment variables and flags
 weight: 4
+aliases:
+- /introduction/concepts-and-components/intro-configuration/
+- /introduction/configuration/
 ---
 
 Porter has a hierarchical configuration system that loads configuration values in the following precedence order:

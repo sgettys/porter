@@ -2,6 +2,8 @@
 title: "Bundle"
 date: 2023-09-17T12:46:50+05:30
 description: ""
+aliases:
+- /bundle/
 ---
 
 **Learn about Bundle in Porter**

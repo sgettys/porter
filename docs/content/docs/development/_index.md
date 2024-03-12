@@ -2,6 +2,8 @@
 title: "Development"
 description: ""
 weight: 7
+aliases:
+- /development/
 ---
 
 **Learn about using Porter for Development**

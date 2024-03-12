@@ -2,6 +2,9 @@
 title: Plugins
 description: Learn what a Porter plugin can do and see a listing of available plugins
 weight: 8
+aliases:
+- /introduction/concepts-and-components/intro-pluginx/
+- /introduction/plugins/
 ---
 
 The Porter client is extensible and anyone can write a plugin to integrate with

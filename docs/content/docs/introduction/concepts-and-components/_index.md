@@ -1,6 +1,8 @@
 ---
 title: "Concepts and Components"
 description: ""
+aliases:
+- /introduction/concepts-and-components/
 ---
 
 **Learn about all the different Concepts and Components**

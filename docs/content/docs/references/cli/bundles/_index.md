@@ -1,6 +1,7 @@
 ---
 title: "Bundles"
 weight: 2
+url: /cli/porter_bundles/
 ---
 
 ## Bundle Commands

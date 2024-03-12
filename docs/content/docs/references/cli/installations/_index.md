@@ -1,5 +1,6 @@
 ---
 title: "porter installations"
+url: /cli/porter_installations/
 ---
 
 ## porter installations

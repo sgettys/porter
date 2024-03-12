@@ -4,6 +4,8 @@ description: The lifecycle of a parameter from definition, to resolution, and fi
 weight: 2
 aliases:
   - /how-parameters-work/
+  - /introduction/concepts-and-components/intro-parameters/
+  - /introduction/parameters/
 ---
 
 When you are authoring a bundle, you can define parameters that are required by

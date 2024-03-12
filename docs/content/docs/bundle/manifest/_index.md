@@ -5,6 +5,7 @@ layout: single
 aliases:
 - /authoring-bundles/
 - /author-bundles/
+- /bundle/manifest/
 ---
 
 A Porter bundle is defined by a Porter manifest file named porter.yaml.

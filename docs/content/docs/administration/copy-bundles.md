@@ -4,6 +4,7 @@ description: Copy a bundle from one registry to another
 weight: 2
 aliases:
   - /copying-bundles/
+  - /administration/copy-bundles/
 ---
 
 Porter allows you to copy a bundle, and all associated images, from one registry to another. This includes both the invocation images and the images defined in the `images` section of the bundle. For example, consider the following `images` map:

@@ -2,6 +2,8 @@
 title: Connect to Minikube
 description: How to connect to a Minikube cluster inside a Porter bundle.
 weight: 4
+aliases:
+- /integrations/minikube/
 ---
 
 The easiest way connect to a Minikube cluster from inside a Porter bundle is to

@@ -4,6 +4,8 @@ description: How to use templates inside porter.yaml
 weight: 4
 aliases:
   - /wiring/
+  - /development/authoring-a-bundle/using-templates/
+  - /development/using-templates/
 ---
 
 Porter supports templates in the action steps of porter.yaml and can perform variable substitution.

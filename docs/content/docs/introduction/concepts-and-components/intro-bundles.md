@@ -2,6 +2,9 @@
 title: Bundles
 description: Introduction to Bundles
 weight: 1
+aliases:
+- /introduction/concepts-and-components/intro-bundles/
+- /introduction/bundles/
 ---
 
 A bundle, as defined by the CNAB specification, is a standard packaging format for multi-component distributed applications. It allows packages to target different runtimes and architectures. It empowers application distributors to package applications for deployment on a wide variety of cloud platforms, providers, and services. Furthermore, it provides necessary capabilities for delivering multi-container applications in disconnected (airgapped) environments.

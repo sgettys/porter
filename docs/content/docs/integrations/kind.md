@@ -2,6 +2,8 @@
 title: Connect to KinD
 description: How to connect to a KinD cluster inside a Porter bundle.
 weight: 3
+aliases:
+- /integrations/kind/
 ---
 
 [KinD](https://github.com/kubernetes-sigs/kind) clusters run Kubernetes via Docker containers. As long as you have access to a Docker daemon, you can run KinD!

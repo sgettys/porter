@@ -1,5 +1,6 @@
 ---
 title: "porter plugins"
+url: /cli/porter_plugins/
 ---
 
 ## porter plugins

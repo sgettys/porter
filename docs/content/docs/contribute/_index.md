@@ -2,6 +2,8 @@
 title: "Contribute"
 description: ""
 weight: 14
+aliases:
+- /contribute/
 ---
 
 **So you want to be a contributor at Porter? :P We would love your contributions.**

@@ -1,6 +1,8 @@
 ---
 title: Contributing Tutorial
 weight: 2
+aliases: 
+- /contribute/tutorial/
 ---
 
 We are excited to have you join the Porter community! This tutorial will walk

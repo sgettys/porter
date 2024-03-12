@@ -2,6 +2,9 @@
 title: Desired State
 description: TODO
 weight: 5
+aliases:
+- /introduction/concepts-and-components/intro-desired-state/
+- /introduction/desired-state/
 ---
 
 **Desired State** commands, such as [porter installation apply], where you are responsible for specifying the _desired state_ of the installation within a file,

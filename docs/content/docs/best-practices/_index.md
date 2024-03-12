@@ -1,6 +1,8 @@
 ---
 title: Best Practices
 weight: 11
+aliases:
+- /best-pratices/
 ---
 
 **Follow Best Practices**

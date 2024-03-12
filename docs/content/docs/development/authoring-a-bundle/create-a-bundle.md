@@ -2,6 +2,9 @@
 title: Create a Bundle
 description: Create a bundle with Porter
 weight: 1
+aliases:
+- /development/authoring-a-bundle/create-a-bundle/
+- /development/create-a-bundle/
 ---
 
 Let's walk through how to create and customize your very own Porter bundle.

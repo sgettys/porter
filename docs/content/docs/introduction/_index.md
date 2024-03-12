@@ -2,6 +2,8 @@
 title: "Introduction"
 description: ""
 weight: 1
+aliases:
+- /introduction/
 ---
 
 **Start learning about Porter today**

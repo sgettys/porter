@@ -2,6 +2,8 @@
 title: Best practices for Porter in a CI Pipeline
 description: How to effectively use a GitHub workflow to create a CI pipeline using Porter.
 weight: 3
+aliases:
+- /best-practices/ci-pipeline/
 ---
 
 To properly test your bundle in a CI pipeline, you can utilize a GitHub workflow.

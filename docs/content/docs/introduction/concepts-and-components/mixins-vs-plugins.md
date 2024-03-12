@@ -2,6 +2,9 @@
 title: Mixins vs. Plugins
 description: What is the difference between a Porter mixin and a plugin? When would you use one instead of another?
 weight: 9
+aliases:
+- /introduction/concepts-and-components/mixins-vs-plugins/
+- /introduction/mixins-vs-plugins/
 ---
 
 [Mixins](/mixins/) are the building blocks for authoring bundles. They

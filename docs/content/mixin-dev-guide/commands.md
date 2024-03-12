@@ -1,6 +1,7 @@
 ---
 title: Mixin Commands
 description: How to implement required and optional commands for your custom Porter mixin
+url: /mixing-dev-guide/commands/
 ---
 
 These are the commands that a mixin can implement to work with porter. Some must

@@ -2,6 +2,8 @@
 title: "Integrations"
 description: ""
 weight: 12
+aliases:
+- /integrations/
 ---
 
 **Learn about various Integrations with Porter**

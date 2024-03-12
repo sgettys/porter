@@ -1,5 +1,6 @@
 ---
 title: "porter mixins"
+url: /cli/porter_mixins/
 ---
 
 ## porter mixins

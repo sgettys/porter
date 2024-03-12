@@ -2,6 +2,8 @@
 title: Move a bundle across an airgap
 description: How to deploy in an airgapped or disconnected environment
 weight: 3
+aliases:
+- /administration/move-bundles-airgapped/
 ---
 
 An airgapped environment is an environment that doesn't have full access to common networks such as the internet and as such some actions such as pulling Docker images from Docker Hub, or downloading a build artifact, may not be possible.

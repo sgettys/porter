@@ -2,6 +2,8 @@
 title: Developing Mixins
 description: Creating and Extending Mixins for Porter
 weight: 2
+aliases:
+- /development/dev-a-mixin/
 ---
 
 You can develop a mixin utilizing our template repository as a start at <https://github.com/getporter/skeletor>

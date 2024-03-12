@@ -2,6 +2,8 @@
 title: "Authoring a Bundle"
 description: ""
 weight: 1
+aliases:
+- /development/authoring-a-bundle/
 ---
 
 **Learn about Authoring a Bundle**

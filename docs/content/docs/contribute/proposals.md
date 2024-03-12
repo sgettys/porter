@@ -2,6 +2,9 @@
 title: "Propose a change to Porter"
 description: "How to propose a change to Porter using our Porter Enhancement Proposal (PEP) process"
 weight: 3
+aliases:
+- /contribute/proposals/
+- /proposals/
 ---
 
 <img src="/images/porter-idea.png" align="right"

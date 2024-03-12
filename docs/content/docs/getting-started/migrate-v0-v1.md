@@ -2,6 +2,8 @@
 title: Migrate from Porter v0 to v1
 description: How to prepare for and migrate Porter's data
 weight: 2
+aliases:
+- /getting-started/migrate-v0-v1/
 ---
 
 Porter's data storage backend and format are changing from v0 to v1.0.

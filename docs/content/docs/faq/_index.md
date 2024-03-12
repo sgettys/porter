@@ -2,6 +2,8 @@
 title: FAQ
 description: Frequently Asked Questions
 weight: 16
+aliases:
+- /faq/
 ---
 
 - [What is CNAB?](#what-is-cnab)

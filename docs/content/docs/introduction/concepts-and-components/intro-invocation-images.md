@@ -2,6 +2,9 @@
 title: Invocation Images
 descriptions: How does Porter build an Invocation Image?
 weight: 6
+aliases:
+- /introduction/concepts-and-components/intro-invocation-images/
+- /introduction/invocation-images/
 ---
 
 When you build a Cloud Native Application Bundle (CNAB) with Porter, a bundle.json and an invocation image are created for you. How does Porter turn your _porter.yaml_ into an invocation image? This walkthrough will explain how Porter constructs the invocation image, including how mixins and other bundles allow you to compose functionality.

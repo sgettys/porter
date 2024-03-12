@@ -2,6 +2,8 @@
 title: Work on Porter with us! 💖
 description: We are putting out the welcome mat for new contributors! Learn how to get started as a contributor and work your way up to a maintainer.
 weight: 4
+aliases:
+- /contribute/work-with-us/
 ---
 
 ✅ Are you interested in contributing to an open-source Go project?

@@ -1,6 +1,7 @@
 ---
 title: "Credentials"
 weight: 3
+url: /cli/porter_credentials/
 ---
 
 ## Credentials Commands

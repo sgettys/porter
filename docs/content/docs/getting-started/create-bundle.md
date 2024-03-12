@@ -2,6 +2,8 @@
 title: Create a Bundle
 description: Create a bundle with Porter
 weight: 3
+aliases:
+- /getting-started/create-bundle/
 ---
 
 Bundles include the tools and logic necessary to automate a deployment and including operations on the runtime-environment.

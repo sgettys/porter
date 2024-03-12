@@ -2,6 +2,8 @@
 title: Connect to GKE
 description: How to connect to a GKE cluster inside a Porter bundle.
 weight: 2
+aliases:
+- /integrations/gke/
 ---
 
 GKE cluster authentication requires more than just a kubeconfig, it also needs a
